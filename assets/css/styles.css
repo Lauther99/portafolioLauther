@@ -623,14 +623,14 @@ progress{
 }
 
 
-@media screen and (min-width: 578px) {
+@media screen and (min-width: 576px) {
     .carrusel-flechas>.a2, .carrusel-flechas>.a3, .carrusel-flechas>.a6, .carrusel-flechas>.a7 {
         visibility: hidden;
     }
   
 }
 
-@media screen and (min-width: 866px) {
+@media screen and (min-width: 865px) {
     .carrusel-flechas>.a2, .carrusel-flechas>.a3, .carrusel-flechas>.a4, .carrusel-flechas>.a5 {
         visibility: hidden;
     }
