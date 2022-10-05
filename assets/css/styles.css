@@ -36,7 +36,6 @@
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    z-index: 2;
 }
 
 .nav-input{
@@ -46,7 +45,7 @@
     position: fixed;
     width: 100%;
     height: 100vh;
-    top: 0;
+    top: 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,10 +54,13 @@
     background-color: var(--green);
     clip-path: circle(0% at center);
     transition: clip-path 1s  ease-in-out;
-    opacity: 0;
+    opacity: 1;
     z-index: 1;
     -webkit-transition: clip-path 1s  ease-in-out;
-
+    -moz-transition: clip-path 1s  ease-in-out;
+    -ms-transition: clip-path 1s  ease-in-out;
+    -o-transition: clip-path 1s  ease-in-out;
+    
 }
 
 .nav-item{
@@ -71,9 +73,6 @@
 .nav-input:checked + .nav-menu {
     clip-path: circle(100% at center);
     opacity: 1;
-} 
-.nav-input:checked + .nav-label {
-    position: fixed;
 } 
 
 
@@ -142,7 +141,7 @@
 .img-perfil{
     width: 16rem;
     height: 20rem;
-    background-image: url("../images/Logos-Imágenes/jeje.jpg");
+    background-image: url("../images/Logos-Imágenes/myself.jpg");
     border-radius: 3rem;
     -webkit-border-radius: 3rem;
     -moz-border-radius: 3rem;
@@ -458,9 +457,9 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
     max-width: 50rem;
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(9, 0.5fr);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .habilities-h2{
@@ -474,48 +473,74 @@
 
 .habilities-h3{
     color: var(--black);
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     
 }
 
-#wd-bar{
-    grid-row-start: 2;
+.habilities-h4{
+    color: var(--green);
+    font-size: 16px;
+    font-weight: 600;
 }
 
-#id-bar{
-    grid-row-start: 4;
+.contenedor-habilities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-#ux-bar{
-    grid-row-start: 6;
+.contenedor-barra{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bone);
+    border-radius: 2rem ;
+    -webkit-border-radius: 2rem ;
+    -moz-border-radius: 2rem ;
+    -ms-border-radius: 2rem ;
+    -o-border-radius: 2rem ;
 }
-
-#fr-bar{
-    grid-row-start: 8;
-}
-
 .wd-bar{
-    grid-row-start: 3;
+    width: 80%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--green);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 
 .id-bar{
-    grid-row-start: 5;
+    width: 95%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--green);
 }
 
 .ux-bar{
-    grid-row-start: 7;
+    width: 90%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--green);
 }
 
 .fr-bar{
-    grid-row-start: 9;
+    width: 75%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: var(--green);
 }
 
-progress{
+/* progress{
     width: 100%;
     height: 1.5rem;
     max-width: 90vw;
-}
+} */
  /*EXPERIENCE ------ */
 .experience-h2{
     text-align: center;
@@ -835,7 +860,7 @@ progress{
 
     .img-perfil{
         height: 30rem;
-        width: 20rem;
+        width: 22rem;
     }
 
     .contenedor-foto{
@@ -990,10 +1015,7 @@ progress{
         font-size: 50px;
         margin-bottom: 1rem;
     }
-    .wd-bar{
-        margin-bottom: 1rem;
-    }
-
+    
     .contactme-h2{
         font-size: 50px;
     }
@@ -1057,6 +1079,7 @@ progress{
 @media screen and (max-width: 348px) {
     .img-perfil{
         height: 15rem;
+        width: 12rem;
     }
 
     .section-item-dos{
@@ -1079,6 +1102,17 @@ progress{
 
     .habilities-h3{
         font-size: 20px;
+    }
+
+    .div-p{
+        width: 8rem;
+        height: 3rem;
+    }
+
+    .perfil-p{
+        width: 8rem;
+        height: 3rem;
+        font-size: 14px;
     }
 
 }

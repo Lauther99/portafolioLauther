@@ -10,15 +10,20 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header> 
         <nav class="nav-bar" >
-
             <label for="menu" class="nav-label"  >
                 <img src="./assets/images/Iconos/menu.svg" alt="" class="nav-img">
             </label>
             <input type="checkbox" id="menu" class="nav-input" >
             
+            
             <div class="nav-menu">
+                <label for="menu" class="nav-label"  >
+                    <img src="./assets/images/Logos-Imágenes/bx-x.svg" alt="" class="nav-img">
+                </label>
+                <input type="checkbox" id="menu" class="nav-input" >
+                
                 
                 <a href="#home" class="nav-item home">Home</a>
                 <a href="#aboutme" class="nav-item">Acerca de mí</a>
@@ -106,14 +111,37 @@
         <section class="habilities-grid" id="habilities">
             <h2 class="habilities-h2">Mis habilidades</h2>
 
-            <h3 class="habilities-h3" id="wd-bar">Web desing</h3>
-            <progress class="wd-bar" max="100" value="70"> 70% </progress>
-            <h3 class="habilities-h3" id="id-bar">Interaction Design</h3>
-            <progress class="id-bar" max="100" value="70"> 70% </progress>
-            <h3 class="habilities-h3" id="ux-bar">UX</h3>
-            <progress class="ux-bar" max="100" value="70"> 70% </progress>
-            <h3 class="habilities-h3" id="fr-bar">Frameworks</h3>
-            <progress class="fr-bar" max="100" value="70"> 70% </progress>
+            <div class="contenedor-habilities">
+                <h3 class="habilities-h3">Web desing</h3>
+                <h4 class="habilities-h4">80%</h4>
+            </div>
+            <div class="contenedor-barra">
+                <div class="wd-bar" > </div>
+            </div>
+
+            <div class="contenedor-habilities">
+                <h3 class="habilities-h3">Interaction Design</h3>
+                <h4 class="habilities-h4">95%</h4>
+            </div>
+            <div class="contenedor-barra">
+                <div class="id-bar"></div>
+            </div>
+
+            <div class="contenedor-habilities">
+                <h3 class="habilities-h3">UX</h3>
+                <h4 class="habilities-h4">90%</h4>
+            </div>
+            <div class="contenedor-barra">
+                <div class="ux-bar" ></div>
+            </div>
+
+            <div class="contenedor-habilities">
+                <h3 class="habilities-h3">Frameworks</h3>
+                <h4 class="habilities-h4">75%</h4>
+            </div>
+            <div class="contenedor-barra">
+                <div class="fr-bar" ></div>
+            </div>
         </section>
 
         <h2 class="experience-h2" id="experience">Experiencia
